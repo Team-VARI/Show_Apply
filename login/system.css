@@ -1,0 +1,87 @@
+* {
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+padding: 0 10px;
+}
+
+.home-logo{
+    margin-top: 125px;
+    text-align: center;
+}
+
+/* HOME
+----------------*/
+.wrapper{
+    text-align: center; 
+    margin-top:  8%;
+    /* max-width: 1000px; */
+}
+form div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+label{
+    font-size: 1.125rem;
+    margin: 10px;
+    margin-right: 284px;
+    display: block;
+    text-align: center; 
+}
+.password{
+    margin: 10px;
+    margin-right: 249px;
+}
+input[type="email"],
+textarea{
+    background: #f3f3f3;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline-style: none;
+}
+input[type="password"],
+textarea{
+    background: #f3f3f3;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    outline-style: none;
+}
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    max-width: 300px;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+.button{
+    font-size: 1.325rem;
+    background: #395BB4;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 130px;
+}
+.button:hover{
+    background: #424546;
+}
+.button2{
+    background-color: #fff;
+    color: #9F9F9F;
+}
+footer {
+    
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
