@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -15,13 +15,7 @@ body {
     height: 110vh;
     line-height: 1;
 }
-ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    height: 15vh;
-}
+
 blockquote, q {
     quotes: none;
 }
@@ -57,62 +51,66 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    height: 12vh;
+    height: 10vh;
     z-index: 99;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
 }
 
-.logo{
+.logo_img{
     width: 141px;
     height: 32px;
 }
 .name{
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #395BB4;
 }
-.geul{
-    width: 122px;
-    height: 45px;
+.write{
+    width: 110px;
+    height: 37px;
     background: #395BB4;
     border-radius: 50px;
     align-items: center;
     color: white;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     cursor: pointer;
 }
 
 .nim{
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 30px;
     color: #395BB4;
 }
 
-
-ul li{
-    list-style: none;
-}
 /* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
 a {
     text-decoration: none;
-    color:#333;
+    color: #333;
 }
 /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
 menu박스 가운데정렬, 글자가운데 정렬 */
 #menu {
-    text-align: center;
+    text-align: center; 
+}
+#menu > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 14vh;
 }
 
 /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
@@ -121,24 +119,33 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     width:140px;
     position:relative;
     text-align: center;
+    list-style: none;
 }
 
 #menu > ul > li > ul {
     width:140px;
-    height: 100px;
+    height: 90px;
     display:none;
     position: absolute;
     background: #FFFFFF;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #a4a4a4;
+    margin-top: 3px;
+
 }
+#menu > ul > li > ul > li{
+    list-style: none;
+}
+
 
 #menu > ul > li:hover > ul {
     display:block;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.1);
+
 }
 
 .submenu{
-    margin: 20px 0 10px 0;
+    margin: 17px 0 10px 0;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -146,218 +153,43 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     line-height: 21px;
 }
 
-.mail-image{
-    width: 50px;
-    margin-left: 3vh;
-}
-
-.nav-wrapper {
-    width: 1680px;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#study {
-    position: absolute;
-    width: 500px;
-    height: 38px;
-    left: 395px;
-    top: 254px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 37px;
-
-
-    color: #737373;
-}
-
-#title {
-    position: absolute;
-    width: 831px;
-    height: 75px;
-    left: 395px;
-    top: 306px;
-
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 75px;
-    color: #000000;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    height: 110vh;
-    line-height: 1;
-}
-ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    height: 15vh;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-input:focus { 
-    outline: none;
-}
-
-select:focus {
-    outline: none;
-}
-
-textarea:focus {
-    outline: none;
-}
-
-
-/*상단바*/
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    height: 12vh;
-    z-index: 99;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
-}
-
-.logo{
-    width: 141px;
-    height: 32px;
-}
-.name{
-    text-decoration: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: #395BB4;
-}
-.geul{
-    width: 122px;
-    height: 45px;
-    background: #395BB4;
-    border-radius: 50px;
-    align-items: center;
-    color: white;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    cursor: pointer;
-}
-
-.nim{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 30px;
-    color: #395BB4;
-}
-
-
-ul li{
-    list-style: none;
-}
-/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
-a {
-    text-decoration: none;
-    color:#333;
-}
-/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
-menu박스 가운데정렬, 글자가운데 정렬 */
-#menu {
-    text-align: center;
-}
-
-/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
-#menu > ul > li {
-    float:left;
-    width:140px;
-    position:relative;
-    text-align: center;
-}
-
-#menu > ul > li > ul {
-    width:140px;
-    height: 100px;
-    display:none;
-    position: absolute;
-    background: #FFFFFF;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-#menu > ul > li:hover > ul {
-    display:block;
-}
-
-.submenu{
-    margin: 20px 0 10px 0;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
+.submenu > a{
     font-size: 14px;
-    line-height: 21px;
+    color:  #a4a4a4;
 }
 
-.mail-image{
-    width: 50px;
-    margin-left: 3vh;
+.submenu > a:hover{
+    font-weight: bold;
+    color:  #395BB4;
+    transition-duration: 0.3s;  
+}
+
+.bell-img{
+    width: 25px;
+    margin-left: 1vh;
+}
+
+.mail > li{
+    list-style: none;
+}
+
+.mail > li > img{
+    width: 215px;
 }
 
 .nav-wrapper {
-    width: 1680px;
+    width: 90%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    
 }
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-weight: bold;
 }
 
 #study {
